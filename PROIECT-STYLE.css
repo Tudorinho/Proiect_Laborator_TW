@@ -1,0 +1,133 @@
+body {
+  background-color: lightgreen;
+}
+
+@media screen and (min-width: 480px) {
+  body {
+    background-color: rgb(211, 220, 223);
+  }
+}
+
+h1 {
+  font-size: 4vw;
+}
+h2 {
+  font-size: 2vw;
+}
+p {
+  font-size: 1vw;
+}
+
+figure.logoFCSB {
+  text-align: center;
+}
+.caption {
+  display: block;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 20%;
+  height: auto;
+}
+
+.red {
+  color: red;
+}
+
+.purple {
+  color: #7208e3da;
+  opacity: 90%;
+}
+
+h2 {
+  color: rgb(12, 12, 202);
+}
+
+#istoric {
+  font-size: 90%;
+}
+
+#stanga {
+  margin-left: 1%;
+  float: left;
+  height: 100px;
+  width: auto;
+  padding-right: 1%;
+}
+
+#adc {
+  height: auto;
+  padding: 2%;
+  text-align: justify;
+}
+
+#italic {
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-style: italic;
+}
+
+li:nth-child(2) {
+  color: #990033;
+}
+
+div#culorifcsb > p {
+  color: yellow;
+}
+
+p:hover {
+  text-decoration: underline wavy gray 1%;
+  color: rgba(240, 157, 41, 0.907);
+}
+
+.skewed {
+  transform: skew(15deg);
+  background-color: rgb(23, 175, 241);
+}
+
+.rotated3d {
+  transform: rotate3d(0, 1, 0.5, 3.142rad);
+  background-color: rgb(231, 13, 50);
+}
+
+div#tranzitii {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition-property: width;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transition-delay: 1s;
+}
+div#tranzitii:hover {
+  width: 300px;
+}
+
+div#animatieculori {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 3s;
+  text-align: center;
+}
+
+@keyframes example {
+  0% {
+    background-color: red;
+  }
+  50% {
+    background-color: blue;
+  }
+}
+
+p#beforep::before {
+  content: "Steaua in 2006-2007 ->";
+  color: aqua;
+}
+
+p#afterp::after {
+  content: " <-Steaua in sezonul 2006-2007";
+  color: aqua;
+}
