@@ -281,3 +281,7 @@ p#afterp::after {
   width: 100%;
   height: 100%;
 }
+
+.coeficient {
+  font-style: oblique;
+}
