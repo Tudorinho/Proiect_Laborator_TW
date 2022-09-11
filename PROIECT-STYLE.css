@@ -285,3 +285,16 @@ p#afterp::after {
 .coeficient {
   font-style: oblique;
 }
+
+.aiordanescu {
+  background-color: coral;
+  padding: 16px;
+}
+
+#albastru-steaua {
+  background-color: #0915f3;
+}
+
+#rosu-steaua {
+  background-color: red;
+}

@@ -10,7 +10,7 @@
     <script src="PROIECT-SCRIPT.js"></script>
 </head>
 
-<body>
+<body onclick="myFunction(event)">
     <!-- Header -->
     <div class="header">
         <h1>FCSB - cel mai mare club din Romania</h1>
@@ -48,6 +48,10 @@
                 <img src="assets/Fcsb-logo.svg.png" alt="Logo FCSB" class="center">
                 <figcaption class="red">Logo-ul echipei FCSB</figcaption>
             </figure>
+            <br>
+
+            <p>Asteapta 3 secunde pentru ceva frumos:</p>
+            <h2 id="forta steaua"></h2>
 
             <h1 class="purple">Scurt istoric</h1>
             <p id="istoric">
@@ -273,6 +277,86 @@
             </p>
             <br>
             <button onclick="schimbacoeficient()">Schimba culoare-coeficient</button>
+            <br><br>
+
+            <div id="creare text js">
+                <h2>Recorduri</h2>
+                <p id="record1">
+                    Cu 65 de sezoane petrecute în Liga 1, este una dintre cele două echipe românești care au jucat doar
+                    în prima ligă română, alături de FC Dinamo București (61 de sezoane). În același timp, Steaua este
+                    deținătoarea recordului actual de campionate naționale , cupe naționale, supercupe naționale și cupe
+                    ale ligii .
+                </p>
+                <button onclick="crearetext()">Arata mai multe recorduri ale Stelei</button>
+                <br><br>
+                <button onclick="stergetext()">Sterge primul paragraf cu recordurile Stelei</button>
+                <br>
+                <p id="record2">
+                    Tudorel Stoica este jucătorul cu cele mai multe prezențe pentru Steaua în Liga 1, 368.
+                </p>
+                <button onclick="schimbaveteran()">Adauga chenar albastru</button>
+                <br><br><br>
+                <p>Fa backgroundul portocaliu(sau fa-l alb la loc) pentru paragraful cu Anghel Iordanescu </p>
+                <button onclick="myFunction()">Toggle</button>
+                <div id="angheliordanescu">
+                    <p>Golgheterul „all-time” al Stelei în campionat este Anghel Iordănescu, cu 146 de goluri înscrise
+                    </p>
+                </div>
+
+            </div>
+            <br><br>
+
+            <h2>Sa testam daca esti stelist</h2>
+            <p>
+                Daca tot ai ajuns pana aici, hai sa vedem daca tii cu Steaua, sau cu rivalii Dinamo.
+            </p>
+            <div onmousedown="WhichButton(event)">Apasa pe textul de mai jos unul din butoane pentru optiunile tale:
+                <p>
+                    Left-click - Steaua<br>
+                    Right-click - Dinamo<br>
+                </p>
+            </div>
+            <h3>Tu esti: <span id="al carui fan esti?"></span></h3>
+            <h2>Testul 2 pentru a deveni stelist</h2>
+            <p>
+                Sa vedem daca stii in ce an s-a infiintat FCSB.
+            </p>
+            <p>
+                Apasa Alt in casuta respectiva daca tu crezi ca s-a infiintat in 1948, sau alta tasta in caz contrar.
+            </p>
+            <input type="text" onkeydown="isKeyPressed(event)">
+            <p id="an infiintare fcsb"></p>
+            <h2>Testul 3 al stelistului</h2>
+            <p><button onclick="clickCounter()" type="button">Apasa daca ai fost la meci!</button></p>
+            <p>De cate ori ai fost la meciurile Stelei pe stadion?:</p>
+            <p id="meciuristadion"></p>
+            <br>
+            <p>Numele portarului de la FCSB este:</p>
+            <button onclick="portarfcsb()">Apasa pentru a afla numele portarului</button>
+            <p id="numeportar"></p>
+            <p>Afiseaza numele portarului de la FCSB cu litere mari:</p>
+            <button onclick="portaruppercase()">Portar</button>
+            <p id="portar-uc"></p>
+            <br>
+            <h2>Bonus</h2>
+            <p>Apasa pe orice element pentru a vedea tipul acestuia mai jos(in italic) </p>
+            <p id="tipelement"></p>
+            <br>
+
+            <h2>Afla culorile Stelei(valoarea exacta)</h2>
+            <p id="albastru-steaua">1)Albastru</p>
+            <button onclick="albastrufcsb()">Albastru</button>
+            <p id="albastruu"></p>
+            <p id="rosu-steaua">2)Rosu.</p>
+            <button onclick="rosufcsb()">Rosu</button>
+            <p id="rosuu"></p>
+            <br>
+
+
+
+
+
+
 
 
 
