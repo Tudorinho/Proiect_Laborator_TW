@@ -101,3 +101,7 @@ function rosufcsb() {
   let bgColor = cssObj.getPropertyValue("background-color");
   document.getElementById("rosuu").innerHTML = bgColor;
 }
+
+function notFound() {
+  window.location.href = "eroare404.html";
+}
